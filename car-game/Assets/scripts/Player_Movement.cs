@@ -10,15 +10,15 @@ public class Player_Movement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        Debug.Log("snippets madarchod");
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if(Input.GetKey("w"))
         {
-            PLayer.transform.Translate(ForwardSpeed *Time.deltaTime,0,0);
+            PLayer.transform.Translate(0,0,ForwardSpeed *Time.deltaTime);
             }
         if(Input.GetKey("a"))
         {
@@ -30,8 +30,9 @@ public class Player_Movement : MonoBehaviour
             }
         if(Input.GetKey("s"))
         {
-            PLayer.transform.Translate(-ForwardSpeed *Time.deltaTime,0,0);
+            PLayer.transform.Translate(0,0,-ForwardSpeed *Time.deltaTime);
             }
+
         
         
     }
