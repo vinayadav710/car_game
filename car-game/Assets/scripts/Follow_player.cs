@@ -6,7 +6,7 @@ public class Follow_player : MonoBehaviour
 {
     public Transform player;
     public Vector3 offset;
-    // Start is called before the first frame update
+    // Start is called before the first frame updateS
     void Start()
     {
         
@@ -16,6 +16,6 @@ public class Follow_player : MonoBehaviour
     void Update()
     {
         transform.position = player.position + offset;
-        transform.rotation = player.rotation + offset;
+        //transform.rotation = player.rotation + offset;
     }
 }
